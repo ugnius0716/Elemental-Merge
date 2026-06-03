@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9266864435ceeb24198af1a1f3f43c05
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - visual: {instanceID: 0}
+  - towerRadialMenuPrefab: {fileID: 7206683479019050604, guid: 7baebbb51fff83f408fdaa284a6f09e5, type: 3}
+  - spawnPoint: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

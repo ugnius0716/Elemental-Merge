@@ -1,34 +1,38 @@
 fileFormatVersion: 2
-guid: 9e6bac2294f5a4147b50e07d05684e88
+guid: 76d2d556ea7309948bc4da6efb5431b9
+AssetOrigin:
+  serializedVersion: 1
+  productId: 208921
+  packageName: Enemy Galore 1 - Pixel Art
+  packageVersion: 1.2
+  assetPath: Assets/Enemy Galore 1 - Pixel Art/Sprites/Spiked Slime/Slime_Spiked_Jump.png
+  uploadId: 503193
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1515134823594722529
-    second: towers_0
+      213: -1641798918562053417
+    second: Slime_Spiked_Jump_0
   - first:
-      213: -3446471830066921269
-    second: towers_1
+      213: 3159627358990428927
+    second: Slime_Spiked_Jump_1
   - first:
-      213: 1704872509302500955
-    second: towers_2
+      213: -441737706056035698
+    second: Slime_Spiked_Jump_2
   - first:
-      213: -3964856179284347504
-    second: towers_3
+      213: 640027358729759804
+    second: Slime_Spiked_Jump_3
   - first:
-      213: -7891793613738847529
-    second: towers_4
+      213: 2442125793583260075
+    second: Slime_Spiked_Jump_4
   - first:
-      213: 2692938615380330224
-    second: towers_5
+      213: -1361301236401281588
+    second: Slime_Spiked_Jump_5
   - first:
-      213: -3499782303461749033
-    second: towers_6
+      213: -6044705316452280752
+    second: Slime_Spiked_Jump_6
   - first:
-      213: -7541592194320633491
-    second: towers_7
-  - first:
-      213: 396448903893879920
-    second: towers_8
+      213: -3939340846533709606
+    second: Slime_Spiked_Jump_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +65,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -92,14 +96,14 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,7 +116,33 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,7 +155,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,199 +167,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: towers_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 95
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1bffccc7e829fae0800000000000000
-      internalID: -1515134823594722529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: towers_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 95
-        width: 26
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc08878712cab20d0800000000000000
-      internalID: -3446471830066921269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: towers_2
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 95
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5eed40b38ce8a710800000000000000
-      internalID: 1704872509302500955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: towers_3
+      name: Slime_Spiked_Jump_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 47
-        width: 27
-        height: 26
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0957e38cf400af8c0800000000000000
-      internalID: -3964856179284347504
+      spriteID: 7d20d7a05982739e0800000000000000
+      internalID: -1641798918562053417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: towers_4
+      name: Slime_Spiked_Jump_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 47
-        width: 26
-        height: 32
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d256645587ba7290800000000000000
-      internalID: -7891793613738847529
+      spriteID: ffaea33b75049db20800000000000000
+      internalID: 3159627358990428927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: towers_5
+      name: Slime_Spiked_Jump_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 47
-        width: 26
-        height: 44
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0f64da3276d3f5520800000000000000
-      internalID: 2692938615380330224
+      spriteID: e8252a295e1aed9f0800000000000000
+      internalID: -441737706056035698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: towers_6
+      name: Slime_Spiked_Jump_3
       rect:
         serializedVersion: 2
-        x: 3
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c6e93ed75d1e800800000000000000
+      internalID: 640027358729759804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Spiked_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 21
-        height: 26
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7dec6f2a9864e6fc0800000000000000
-      internalID: -3499782303461749033
+      spriteID: ba16957687c24e120800000000000000
+      internalID: 2442125793583260075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: towers_7
+      name: Slime_Spiked_Jump_5
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 0
-        width: 26
-        height: 31
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d61f8a83bd1e65790800000000000000
-      internalID: -7541592194320633491
+      spriteID: cc5600cecbfab1de0800000000000000
+      internalID: -1361301236401281588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: towers_8
+      name: Slime_Spiked_Jump_6
       rect:
         serializedVersion: 2
-        x: 94
+        x: 128
         y: 0
-        width: 29
-        height: 44
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07c00387d28708500800000000000000
-      internalID: 396448903893879920
+      spriteID: 05652f87a84ec1ca0800000000000000
+      internalID: -6044705316452280752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Spiked_Jump_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0fb212f56a459c0800000000000000
+      internalID: -3939340846533709606
       vertices: []
       indices: 
       edges: []
@@ -338,7 +346,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +356,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      towers_0: -1515134823594722529
-      towers_1: -3446471830066921269
-      towers_2: 1704872509302500955
-      towers_3: -3964856179284347504
-      towers_4: -7891793613738847529
-      towers_5: 2692938615380330224
-      towers_6: -3499782303461749033
-      towers_7: -7541592194320633491
-      towers_8: 396448903893879920
+      Slime_Spiked_Jump_0: -1641798918562053417
+      Slime_Spiked_Jump_1: 3159627358990428927
+      Slime_Spiked_Jump_2: -441737706056035698
+      Slime_Spiked_Jump_3: 640027358729759804
+      Slime_Spiked_Jump_4: 2442125793583260075
+      Slime_Spiked_Jump_5: -1361301236401281588
+      Slime_Spiked_Jump_6: -6044705316452280752
+      Slime_Spiked_Jump_7: -3939340846533709606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
