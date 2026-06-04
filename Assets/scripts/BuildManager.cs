@@ -10,7 +10,7 @@ public class buildManager : MonoBehaviour
     public GameObject MageTowerPrefab;
 
     void Awake()
-    {
+    { 
         if (instance != null)
         {
             Debug.LogError("More than one buildManager in scene!");

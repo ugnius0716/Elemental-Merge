@@ -91,37 +91,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &7657349193669918045
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7827364709328761715}
-  m_Layer: 0
-  m_Name: spawn point for tower spaces
-  m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7827364709328761715
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7657349193669918045}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02999878, y: -2.9500008, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3480519218633781279}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8876397388021864561
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,12 +118,11 @@ Transform:
   m_GameObject: {fileID: 8876397388021864561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9189129, y: -0.17457867, z: 0}
+  m_LocalPosition: {x: 4.453396, y: -1.415803, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4262585699324827425}
-  - {fileID: 7827364709328761715}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7879898075080549446
@@ -216,8 +184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::buildingSpaces
   visual: {fileID: 2597272656626411290}
-  spawnPoint: {fileID: 7827364709328761715}
+  spawnPoint: {fileID: 0}
   hoverColor: {r: 1, g: 0, b: 0, a: 1}
-  tower: {fileID: 0}
-  positionOffset: {x: 0, y: 0, z: 0}
   towerRadialMenuPrefab: {fileID: 0}
+  positionOffset: {x: 0, y: 0, z: 0}
+  tower: {fileID: 0}

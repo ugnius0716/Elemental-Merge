@@ -2198,6 +2198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee416adb03eb904d997d12d36b3666c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildManager
+  buildingSpaces: {fileID: 0}
   ArcherTowerPrefab: {fileID: 7773875450852597210, guid: a78dd6628cf86274db9e63ba684b23bc, type: 3}
   MageTowerPrefab: {fileID: 4785103019929351898, guid: 3dc5a2edc607a244bb9e5345f924ff7d, type: 3}
 --- !u!4 &1577347146 stripped
