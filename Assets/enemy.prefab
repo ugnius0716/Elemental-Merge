@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemy
   speed: 5
+  health: 100
+  coinsGiven: 10
+  deathEffect: {fileID: 8458752940587982002, guid: fb851604cd23cbf47bebfe37135e4ca5, type: 3}
 --- !u!212 &7411738367500914709
 SpriteRenderer:
   serializedVersion: 2

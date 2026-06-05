@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645379389433360204}
   - component: {fileID: 1910639412037513038}
-  - component: {fileID: -4477043896889519388}
+  - component: {fileID: 1601216598697808483}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 2820136051179246240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.62, y: -14.46, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 449.26166, y: 278.12332, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &-4477043896889519388
+--- !u!114 &1601216598697808483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,8 +101,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2820136051179246240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26a6c7af400facf4c9bffb20e8e9b02b, type: 3}
+  m_Script: {fileID: 11500000, guid: c72afb7798600444cb8f5dd3fd911ea6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Arrow
+  m_EditorClassIdentifier: Assembly-CSharp::projectile
   speed: 20
+  damage: 50
+  explosionRadius: 0
   impactEffect: {fileID: 5980232712137226745, guid: b375103f28bc5c548bc113d00a0f615e, type: 3}

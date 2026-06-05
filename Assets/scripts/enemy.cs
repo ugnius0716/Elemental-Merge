@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 { 
     public float speed = 5f;
+    public int health = 100;
+    public int coinsGiven = 10;
+
+    public GameObject deathEffect;
+
     private Transform target;
     private int wavepointIndex = 0;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         target = Waypoints.points[0];
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 dir = target.position - transform.position;
@@ -23,14 +26,35 @@ public class enemy : MonoBehaviour
             GetNextWaypoint();
         }
     }
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die() {
+        PlayerStats.money += coinsGiven;
+
+        GameObject effect = (GameObject)Instantiate( deathEffect, transform.position, Quaternion.identity);
+        Destroy(effect,5f);
+
+        Destroy(gameObject);
+    }
     void GetNextWaypoint()
     {
         if(wavepointIndex >= Waypoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
         wavepointIndex++;
         target = Waypoints.points[wavepointIndex];
+    }
+    void EndPath()
+    {
+        PlayerStats.lives--;
+        Destroy(gameObject);
     }
 }

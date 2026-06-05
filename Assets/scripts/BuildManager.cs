@@ -9,6 +9,8 @@ public class buildManager : MonoBehaviour
     public GameObject ArcherTowerPrefab;
     public GameObject MageTowerPrefab;
 
+    public GameObject buildEffect;
+
     void Awake()
     { 
         if (instance != null)
@@ -64,6 +66,10 @@ public class buildManager : MonoBehaviour
         space.tower = tower;
         Debug.Log($"Built {tower.name} on {space.name}. Money: {PlayerStats.money}");
 
+        GameObject effect = (GameObject)Instantiate(buildEffect, spawnPos, Quaternion.identity);
+        Destroy(effect, 5f);
+
         return tower;
+        
     }
 }

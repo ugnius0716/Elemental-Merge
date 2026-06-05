@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5003732145924371892}
   - component: {fileID: 3760976626053063416}
-  - component: {fileID: 6871522460461824207}
+  - component: {fileID: 8541130817344313990}
   m_Layer: 0
   m_Name: wizard_bullet
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8772731892800915807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.56, y: -14.06, z: 0}
+  m_LocalPosition: {x: 449.26166, y: 278.12332, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &6871522460461824207
+--- !u!114 &8541130817344313990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,8 +101,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8772731892800915807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26a6c7af400facf4c9bffb20e8e9b02b, type: 3}
+  m_Script: {fileID: 11500000, guid: c72afb7798600444cb8f5dd3fd911ea6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Arrow
-  speed: 10
+  m_EditorClassIdentifier: Assembly-CSharp::projectile
+  speed: 20
+  damage: 100
+  explosionRadius: 0
   impactEffect: {fileID: 4792615741641505484, guid: c08e6bd26ea2b2043ac9f2f9ba080ee8, type: 3}
