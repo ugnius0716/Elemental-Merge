@@ -105,10 +105,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a764fa52fd7d0884a9ea62efc925d515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::tower
-  fireRate: 0.5
   range: 5
+  fireRate: 0.5
+  ProjectilePrefab: {fileID: 8772731892800915807, guid: fbd7fccaaa7b0cb4c93c9815f4a429e1, type: 3}
+  useLaser: 0
+  lineRenderer: {fileID: 0}
   enemyTag: Enemy
-  ArrowPrefab: {fileID: 8772731892800915807, guid: fbd7fccaaa7b0cb4c93c9815f4a429e1, type: 3}
   firePoint: {fileID: 8601611714155980840}
 --- !u!1 &8853787536322738206
 GameObject:

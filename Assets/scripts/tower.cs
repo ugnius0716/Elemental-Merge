@@ -4,23 +4,57 @@ public class tower : MonoBehaviour
 {
     private Transform target;
 
-    [ Header("Attributes")]
+    [ Header("General")]
+
+    public float range = 5f;
+
+    [Header("Use Bullets(default)")]
+
     public float fireRate = 1f;
     private float fireCountdown = 0f;
-    public float range = 5f;
+    public GameObject ProjectilePrefab;
+
+    
+    [Header("Use Laser")]
+    public bool useLaser = false;
+    public LineRenderer lineRenderer;
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
 
 
-    public GameObject ArrowPrefab;
+    
     public Transform firePoint;
 
-    void Start()
+    
+    void Update()
     {
-        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        
+        LockOnTarget();
+
+        if (target == null)
+        {
+            if (useLaser && lineRenderer != null && lineRenderer.enabled)
+                lineRenderer.enabled = false;
+            return;
+        }
+
+        if (useLaser)
+        {
+            Laser();
+        }
+        else
+        {
+            if (fireCountdown <= 0f)
+            {
+                Shoot();
+                fireCountdown = 1f / fireRate;
+            }
+            fireCountdown -= Time.deltaTime;
+        }
+       
     }
-    void UpdateTarget()
+    void LockOnTarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float closestDistance = Mathf.Infinity;
@@ -41,28 +75,24 @@ public class tower : MonoBehaviour
         {
             target = closestEnemy.transform;
         }
-        else 
-        { 
+        else
+        {
             target = null;
         }
-        
+
     }
-    void Update()
+    void Laser()
     {
-        if (target == null)
+        if(!lineRenderer.enabled)
         {
-            return;
+            lineRenderer.enabled = true;
         }
-        if (fireCountdown <= 0f)
-        {
-            Shoot();
-            fireCountdown = 1f / fireRate;
-        }
-        fireCountdown -= Time.deltaTime;
+        lineRenderer.SetPosition(0, firePoint.position);
+        lineRenderer.SetPosition(1, target.position);
     }
     void Shoot()
     {
-        GameObject arrowGO = (GameObject)Instantiate(ArrowPrefab, firePoint.position, firePoint.rotation);
+        GameObject arrowGO = (GameObject)Instantiate(ProjectilePrefab, firePoint.position, firePoint.rotation);
         projectile arrow = arrowGO.GetComponent<projectile>();
 
         if (arrow != null)
