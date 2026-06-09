@@ -3,6 +3,7 @@ using UnityEngine;
 public class tower : MonoBehaviour
 {
     private Transform target;
+    private Enemy targetEnemy;
 
     [ Header("General")]
 
@@ -17,7 +18,11 @@ public class tower : MonoBehaviour
     
     [Header("Use Laser")]
     public bool useLaser = false;
+    public int damageOverTime = 30;
+    public float slowPercent = 0.7f;
+
     public LineRenderer lineRenderer;
+    public ParticleSystem impactEffect;
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
@@ -29,13 +34,15 @@ public class tower : MonoBehaviour
     
     void Update()
     {
-        
         LockOnTarget();
 
         if (target == null)
         {
-            if (useLaser && lineRenderer != null && lineRenderer.enabled)
+            if (useLaser && lineRenderer.enabled) { 
                 lineRenderer.enabled = false;
+                impactEffect.Stop();
+                
+            }
             return;
         }
 
@@ -74,6 +81,7 @@ public class tower : MonoBehaviour
         if (closestEnemy != null && closestDistance <= range)
         {
             target = closestEnemy.transform;
+            targetEnemy = closestEnemy.GetComponent<Enemy>();
         }
         else
         {
@@ -83,12 +91,24 @@ public class tower : MonoBehaviour
     }
     void Laser()
     {
-        if(!lineRenderer.enabled)
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
+        targetEnemy.Slow(slowPercent);
+        if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
+            impactEffect.Play();
         }
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
+
+        Vector3 dir = firePoint.position - target.position;
+
+        impactEffect.transform.position = target.position+ dir.normalized;
+
+        impactEffect.transform.rotation = Quaternion.LookRotation(dir);
+
+        
+
     }
     void Shoot()
     {

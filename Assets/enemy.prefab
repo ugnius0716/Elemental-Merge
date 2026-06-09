@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1211580553676848581}
   - component: {fileID: 842410023952798684}
   - component: {fileID: 7411738367500914709}
+  - component: {fileID: 2022542212797110920}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Enemy
@@ -108,3 +109,15 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2022542212797110920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4191355396624864418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc10c0200d5140648a4ab9735f7bf990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
