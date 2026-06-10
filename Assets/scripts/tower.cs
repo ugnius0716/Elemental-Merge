@@ -112,12 +112,12 @@ public class tower : MonoBehaviour
     }
     void Shoot()
     {
-        GameObject arrowGO = (GameObject)Instantiate(ProjectilePrefab, firePoint.position, firePoint.rotation);
-        projectile arrow = arrowGO.GetComponent<projectile>();
+        GameObject projectileGO = (GameObject)Instantiate(ProjectilePrefab, firePoint.position, firePoint.rotation);
+        projectile projectile = projectileGO.GetComponent<projectile>();
 
-        if (arrow != null)
+        if (projectile != null)
         {
-            arrow.Seek(target);
+            projectile.Seek(target);
         }
     }
 

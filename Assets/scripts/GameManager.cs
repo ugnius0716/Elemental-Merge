@@ -1,13 +1,20 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     
-    private bool gameEnded = false;
+    public static bool gameIsOver;
+
+    public GameObject gameOverUI;
+    void Start()
+    {
+        gameIsOver = false;
+    }  
 
     void Update()
     {
-        if (gameEnded) {  return; }
+        if (gameIsOver) {  return; }
+        
         if (PlayerStats.lives <= 0)
         {
             EndGame();
@@ -18,7 +25,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     void EndGame()
     {
-        gameEnded = true;
-        Debug.Log("Game Over!");
+        gameIsOver = true;
+        gameOverUI.SetActive(true);
     }
 }
