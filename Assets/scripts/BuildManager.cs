@@ -6,6 +6,7 @@ public class buildManager : MonoBehaviour
 
     public buildingSpaces buildingSpaces;
     private TowerBlueperint towerToBuild;
+    private buildingSpaces selectedSpace;
     public GameObject ArcherTowerPrefab;
     public GameObject MageTowerPrefab;
 
@@ -26,7 +27,13 @@ public class buildManager : MonoBehaviour
     public void SelectTowerToBuild(TowerBlueperint tower)
     {
         towerToBuild = tower;
+        selectedSpace = null;
     }
+    public void SelectSpace(buildingSpaces space)
+    {
+        selectedSpace = space;
+        towerToBuild = null;
+    }   
 
     public GameObject BuildTowerOn(buildingSpaces space, TowerBlueperint blueprint)
     {

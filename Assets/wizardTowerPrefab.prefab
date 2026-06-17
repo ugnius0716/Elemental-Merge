@@ -109,7 +109,10 @@ MonoBehaviour:
   fireRate: 0.5
   ProjectilePrefab: {fileID: 8772731892800915807, guid: fbd7fccaaa7b0cb4c93c9815f4a429e1, type: 3}
   useLaser: 0
+  damageOverTime: 0
+  slowPercent: 0
   lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
   enemyTag: Enemy
   firePoint: {fileID: 8601611714155980840}
 --- !u!1 &8853787536322738206

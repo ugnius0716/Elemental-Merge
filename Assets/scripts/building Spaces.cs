@@ -55,7 +55,9 @@ public class buildingSpaces : MonoBehaviour
     void OnMouseDown()
     {
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
-        if (tower != null) return;
+        if (tower != null) {
+            buildManager.SelectSpace(this);
+        }
 
         // Close any other open menu
         if (activeMenuOwner != null && activeMenuOwner != this)

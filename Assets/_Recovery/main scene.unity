@@ -3180,10 +3180,10 @@ MonoBehaviour:
     cost: 75
   mageTower:
     prefab: {fileID: 4785103019929351898, guid: 3dc5a2edc607a244bb9e5345f924ff7d, type: 3}
-    cost: 120
+    cost: 100
   steamTower:
     prefab: {fileID: 6778229125962373045, guid: 6d07ac92b6f69704e9da213684d28da0, type: 3}
-    cost: 200
+    cost: 150
 --- !u!4 &556183661
 Transform:
   m_ObjectHideFlags: 0
@@ -4652,7 +4652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   startMoney: 400
-  startLives: 1
+  startLives: 20
 --- !u!4 &1240530097
 Transform:
   m_ObjectHideFlags: 0
@@ -5370,7 +5370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 200
+  m_text: 150
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4648dde8f01358741a8062221cccf2e3, type: 2}
   m_sharedMaterial: {fileID: 3121846264781446549, guid: 4648dde8f01358741a8062221cccf2e3, type: 2}
@@ -7023,7 +7023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2075216418
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7446,7 +7446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8464394547386621788, guid: 7baebbb51fff83f408fdaa284a6f09e5, type: 3}
       propertyPath: m_text
-      value: 125
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8464394547386621788, guid: 7baebbb51fff83f408fdaa284a6f09e5, type: 3}
       propertyPath: m_fontSize
